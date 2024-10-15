@@ -1,0 +1,8 @@
+runtime: java17  # Specify Java 17 runtime
+
+instance_class: F2  # Optional: You can specify the instance class
+service: default  # Optional: Name of your service, default is the main service
+
+handlers:
+  - url: /.*
+    script: auto  # Auto-detects how to serve your application
